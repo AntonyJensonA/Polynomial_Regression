@@ -14,7 +14,7 @@ ac_unit = st.number_input(
 
 if st.button("Predict"):
     valid = True
-    if ac_unit < 1 or area > 150:
+    if ac_unit < 1 or ac_unit > 150:
         st.error("AC units should be between 0 and 150 units")
         valid = False
     if valid:
