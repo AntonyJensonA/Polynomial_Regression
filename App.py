@@ -4,10 +4,12 @@ from sklearn.preprocessing import PolynomialFeatures
 import joblib
 
 model = joblib.load("Bill_model.pkl")
-st.title("Electricity Bill Prediction",min_value =1.0 ,max_value =150,value =1.0)
-
+st.title("Electricity Bill Prediction")
 ac_unit = st.number_input(
-    "Enter the AC unit consumption")
+    "Enter the AC unit consumption",
+    min_value =1.0 ,
+    max_value =150,
+    value =1.0)
 
 
 if st.button("Predict"):
