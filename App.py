@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load("Bill_Model.pkl")
+model = joblib.load("Bill_model.pkl")
 st.title("Electricity Bill Prediction")
 
 ac_unit = st.number_input(
