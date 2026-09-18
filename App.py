@@ -17,7 +17,7 @@ if st.button("Predict"):
     if ac_unit < 1 or ac_unit > 150:
         st.error("AC units should be between 0 and 150 units")
         
-    if valid:
+    else:
         input_data = pd.DataFrame({
             "AC_Units": [ac_unit]
         })
